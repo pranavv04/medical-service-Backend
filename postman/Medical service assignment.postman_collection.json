@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "c50bebe0-cfe3-4d86-aefd-c0aea2ec6222",
+		"name": "Medical service assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25263855"
+	},
+	"item": [
+		{
+			"name": "http://localhost:4000/service/addservice",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"serviceName\" : \"Blood Test Package\",\r\n    \"description\": \"Basic blood test package including complete blood count (CBC), blood sugar, and cholesterol levels.\",\r\n    \"price\" : 40\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/service/addservice",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"service",
+						"addservice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/service/getservices",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/service/getservices",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"service",
+						"getservices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/service/updateservice/6735bc6df7a7df6991a289a6",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"price\" : 80\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/service/updateservice/6735bc6df7a7df6991a289a6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"service",
+						"updateservice",
+						"6735bc6df7a7df6991a289a6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/service/deleteservice/6735bc6df7a7df6991a289a6",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/service/deleteservice/6735bc6df7a7df6991a289a6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"service",
+						"deleteservice",
+						"6735bc6df7a7df6991a289a6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
